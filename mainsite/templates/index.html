@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="headerImage">
+    <img src="{% static 'img/Website Header.gif'%}" style="margin-right: 0px; margin-left: 0px; width: 100%;" class="img-fluid"/>
+</div>
+<div class="otherRow" style="text-align: center;">
+    <div class="row">
+        <div class="col">
+            <h1 class='customFont' style='font-size: 6em;text-align: center;'>BotBot Land Games</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class='smallCustomFont' style='font-size: 2em; text-align: center;'>BotBot Land Games is our line of Jewish games featuring robots! Featuring...</p> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 gifImage customFont">
+            <h3 style="text-align: center;">BlueBot</h3>
+            <img src="{% static 'img/BlueBot.gif' %}" style="width: 50%;height: 50%;vertical-align: bottom;" class="img-fluid"/>
+        </div>
+        <div class="col-md-3 gifImage customFont">
+            <h3 style="text-align: center">BowBot</h3>
+            <img src ="{%static 'img/BowBot.gif' %}" style="width: 50%;height: 50%;vertical-align: bottom;" class="img-fluid"/>
+        </div>
+        <div class="col-md-3 gifImage customFont">
+            <h3 style="text-align: center">MordyBot</h3>
+            <img src="{% static 'img/MordyBot.gif' %}" style="width: 50%;height: 50%;vertical-align: bottom;" class="img-fluid"/>
+        </div>
+        <div class="col-md-3 gifImage customFont">
+            <h3 style="text-align: center">SwirlBot</h3>
+            <img src="{% static 'img/SwirlBot.gif' %}" style="width: 50%;height: 50%;vertical-align: bottom;" class="img-fluid"/>
+        </div>
+    </div>
+</div>
+
+<div class="greenRow" style="text-align: center;">
+    <div class='row'>
+        <div class="col">
+            <h1  class='customFont' style='font-size: 6em; text-align: center;'>Our Story</h1>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class='smallCustomFont' style='font-size: 2em; text-align: center;'>
+                Crafty Coders Apps started as a passion project, something fun to do 
+                during the COVID-19 lockdown. It went from focusing on apps to help
+                crafters to games designed for kids. But not just kids. Jewish kids.
+                Crafty Coders Apps strives to bring games to help kids learn Hebrew,
+                to learn about their Jewish heritage. We started with the Alef-Bais,
+                the most fundamental part. We hope to expand our range in the future!
+            </p>
+        </div>
+    </div>
+    <div class='row' style='text-align: center; padding-bottom: 50px;'>
+        <img src="{% static 'img/Alef Bais Bots Screen Capture.png' %}" class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+    </div>
+</div>
+{% comment %} <div class='otherRow' style='text-align: center;'>
+    <div class='row'>
+        <h1  class='customFont' style='font-size: 6em;'>Want to help test our games?</h1>
+        <!--<a role="button" class="btn btn-primary button" href='volunteer.html' style="text-align: center; margin-left: 45%; padding-bottom: 20px;">Click here to volunteer!</a>-->
+    </div>
+    <div class="buttonDiv row" style="padding-top: 25px; padding-bottom: 25px;text-align: center;">
+        <button></button>
+    </div>
+
+</div> <!-- /container -->        {% endcomment %}
+
+{% endblock content %}

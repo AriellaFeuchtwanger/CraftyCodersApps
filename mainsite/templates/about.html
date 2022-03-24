@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="greenRow" style="text-align: center;">
+    <div class='row'>
+        <div class="col">
+            <h1  class='customFont' style='font-size: 6em; text-align: center;'>Our Story</h1>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class='smallCustomFont' style='font-size: 2em; text-align: center;'>
+                Crafty Coders Apps started as a passion project, something fun to do 
+                during the COVID-19 lockdown. It went from focusing on apps to help
+                crafters to games designed for kids. But not just kids. Jewish kids.
+                Crafty Coders Apps strives to bring games to help kids learn Hebrew,
+                to learn about their Jewish heritage. We started with the Alef-Bais,
+                the most fundamental part. We hope to expand our range in the future!
+            </p>
+        </div>
+    </div>
+    <div class='row' style='text-align: center; padding-bottom: 50px;'>
+        <img src="{% static 'img/Alef Bais Bots Screen Capture.png' %}" class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+    </div>
+</div>
+{% endblock content %}

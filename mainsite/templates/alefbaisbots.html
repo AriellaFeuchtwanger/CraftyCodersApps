@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+        <div class="greenRow" style="padding-bottom: 30px;">
+            <div class="row">
+                <div class="col">
+                    <h1 class='customFont' style='font-size: 6em;'>Alef Bais Bots</h1>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class='smallCustomFont' style='font-size: 2em;'>
+                        Alef Bais Bots is the first game in our line of apps for Jewish children.
+                         Help the bots uncover the photos in their photo album with four fun games:
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <i class="fas fa-robot"></i>
+                <h3 class='smallCustomFont' style='font-size: 2em;'> Tracing Game</h3>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/Tracing Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <i class="fas fa-robot"></i>
+                <h3 class='smallCustomFont' style='font-size: 2em;'> Gumball Game</h3>
+                    
+            </div>
+            <div class="row">
+                <img src="{% static 'img/Gumball Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <i class="fas fa-robot"></i>
+                <h3 class='smallCustomFont' style='font-size: 2em;'> Matching Game</h3>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/Matching Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <i class="fas fa-robot"></i>
+                <h3 class='smallCustomFont' style='font-size: 2em;'> Candy Rain Game</h3>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/Candy Rain Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                <h3 class='smallCustomFont' style='font-size: 2.5em;text-align: center;'>Download today!</h3>
+            </div>
+            <div class="row">
+                    <div class="col-4" align="center">
+                        <a href="https://play.google.com/store/apps/details?id=com.CraftyCodersApps.AlefBaisBots">
+                            <img src="{% static 'img/androidDownload.png' %}" alt="Download from Google Play" style="width: 50%; "/>
+                        </a>
+                    </div>
+                    <div class="col-4" align="center">
+                        <a href="https://apps.apple.com/us/app/alefbaisbots/id1580284561">
+                            <img src="{% static 'img/appleDownload.png' %}" alt="Download from Apple App Store" style="width: 50%; "/>
+                        </a>
+                    </div>
+                    <div class="col-4" align="center">
+                        <a href="https://www.amazon.com/dp/B09BHZTZXJ/ref=apps_sf_sta">
+                            <img src="{% static 'img/amazonDownload.png' %}" alt="Download from Amazon App Store" style="width: 50%; "/>
+                        </a>
+                    </div>
+            </div>
+        </div>
+{% endblock content %}
