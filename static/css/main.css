@@ -6,6 +6,10 @@
 @font-face { font-family: Noot; src: url('Noot.otf'); } 
 @font-face { font-family: Fredoka; src: url('FredokaOne-Regular.otf');}
 
+ body {
+	   background-color: #DFF0E5;
+   }
+
 .customFont{
     font-family: Noot;
 }

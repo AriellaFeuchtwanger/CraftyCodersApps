@@ -30,9 +30,9 @@ except KeyError as e:
     raise RuntimeError("Could not find a SECRET_KEY in environment") from e
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.craftycodersapps.com']
 
 
 # Application definition
@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+#MIDDLEWARE += ["csp.middleware.CSPMiddleware"]
 
 ROOT_URLCONF = 'craftycodersapps.urls'
 
@@ -131,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "/var/www/craftycodersapps.com/static"
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 # Default primary key field type
@@ -148,3 +150,17 @@ AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+SECURE_HSTS_SECONDS =  2_592_000  # 30 days  # Unit is seconds; *USE A SMALL VALUE FOR TESTING!*
+SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+#SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
+#CSP_STYLE_SRC = ["'self'", "cdn.jsdelivr.net"]
+#CSP_SCRIPT_SRC = [
+#            "https://stackpath.bootstrapcdn.com",
+#            "https://cdn.jsdelivr.net",
+#            "https://code.jquery.com",
+#            "https://www.googletagmanager.com"
+#                    ]
