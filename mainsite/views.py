@@ -48,8 +48,11 @@ class ContactView(FormView):
 
     def form_valid(self, form):
         # Calls the custom send method
-        form.send()
-        return super().form_valid(form)
+        if form.is_valid():
+            form.send()
+            return super().form_valid(form)
+        else:
+            return super().form_invalid(form)
 
 
 class SendEmailSuccessView(TemplateView):

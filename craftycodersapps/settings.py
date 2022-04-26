@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainsite.apps.MainsiteConfig',
     'crispy_forms',
+    'captcha',
 ]
 
 MIDDLEWARE = [
@@ -151,14 +152,15 @@ AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-SECURE_HSTS_SECONDS =  2_592_000  # 30 days  # Unit is seconds; *USE A SMALL VALUE FOR TESTING!*
+# 30 days  # Unit is seconds; *USE A SMALL VALUE FOR TESTING!*
+SECURE_HSTS_SECONDS = 2_592_000
 SECURE_HSTS_PRELOAD = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 #SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
 #CSP_STYLE_SRC = ["'self'", "cdn.jsdelivr.net"]
-#CSP_SCRIPT_SRC = [
+# CSP_SCRIPT_SRC = [
 #            "https://stackpath.bootstrapcdn.com",
 #            "https://cdn.jsdelivr.net",
 #            "https://code.jquery.com",

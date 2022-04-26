@@ -2,7 +2,7 @@ from django import forms
 from django.conf import settings
 from django.core.mail import send_mail
 from django.template import RequestContext
-
+from captcha.fields import CaptchaField
 # Create your forms here.
 
 
@@ -11,6 +11,7 @@ class ContactForm(forms.Form):
     email = forms.EmailField()
     inquiry = forms.CharField(max_length=70)
     message = forms.CharField(widget=forms.Textarea)
+    captcha = CaptchaField()
 
     def get_info(self):
         """
