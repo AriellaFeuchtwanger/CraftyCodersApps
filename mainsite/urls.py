@@ -10,6 +10,6 @@ urlpatterns = [
     path("chanukahbots", ChanukahBotsView.as_view(), name='chanukahbots'),
     path("nekudosbots", NekudosBotsView.as_view(), name='nekudosbots'),
     path("privacypolicy", PrivacyPolicyView.as_view(), name='privacy_policy'),
-    path("contact", ContactView.as_view(), name='contact'),
+    # path("contact", ContactView.as_view(), name='contact'),
     path("email-confirmation", SendEmailSuccessView.as_view(), name='success'),
 ]
