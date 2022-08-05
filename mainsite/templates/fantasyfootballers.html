@@ -58,12 +58,12 @@
         }
   
         var buildUrl = "../static/unity/Build";
-        var loaderUrl = buildUrl + "/FantasyFootballer2.loader.js";
+        var loaderUrl = "{% static 'unity/Build/FantasyFootballer2.loader.js' %}";
         var config = {
-          dataUrl: buildUrl + "/FantasyFootballer2.data.br",
-          frameworkUrl: buildUrl + "/FantasyFootballer2.framework.js.br",
-          codeUrl: buildUrl + "/FantasyFootballer2.wasm.br",
-          streamingAssetsUrl: "StreamingAssets",
+          dataUrl: "{% static 'unity/Build/FantasyFootballer2.data.br' %}",
+          frameworkUrl: "{% static 'unity/Build/FantasyFootballer2.framework.js.br' %}",
+          codeUrl: "{% static 'unity/Build/FantasyFootballer2.wasm.br' %}",
+          streamingAssetsUrl: "{% static 'unity/StreamingAssets' %}",
           companyName: "CraftyCodersApps",
           productName: "CommunityRunner",
           productVersion: "1.0",
@@ -118,7 +118,7 @@
         document.body.appendChild(script);
       </script>
 </div>
-<div>
+<div style="clear:both;">
     <h4>Instructions</h4>
     <p>
         Play as your favorite hosts with the Fantasy Footballers Endless Runner! Collect the Footballers 
@@ -126,7 +126,7 @@
         Good luck!
     </p>
 </div>
-<div>
+<div style="clear:both;">
     <h4>Attributions</h4>
     <p>
         Audio: <a href="https://freesound.org/people/LittleRobotSoundFactory"/>
