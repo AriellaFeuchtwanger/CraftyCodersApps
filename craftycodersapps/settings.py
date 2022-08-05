@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainsite.apps.MainsiteConfig',
     'crispy_forms',
-    'captcha',
 ]
 
 MIDDLEWARE = [

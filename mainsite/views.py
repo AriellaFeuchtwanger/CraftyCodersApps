@@ -37,6 +37,10 @@ class NekudosBotsView(TemplateView):
     template_name = "nekudosbots.html"
 
 
+class FantasyFootballersView(TemplateView):
+    template_name = "fantasyfootballers.html"
+
+
 class PrivacyPolicyView(TemplateView):
     template_name = "privacypolicy.html"
 
