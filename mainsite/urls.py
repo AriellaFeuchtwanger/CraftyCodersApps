@@ -1,7 +1,7 @@
 from django.urls import path
 
 from . import views
-from .views import IndexView, AboutView, AlefBaisBotsView, ChanukahBotsView, NekudosBotsView, PrivacyPolicyView, ContactView, SendEmailSuccessView, FantasyFootballersView
+from .views import IndexView, AboutView, AlefBaisBotsView, ChanukahBotsView, NekudosBotsView, PrivacyPolicyView, ContactView, SendEmailSuccessView, FantasyFootballersView, MitzvahBotTownView
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index_view'),
@@ -9,9 +9,8 @@ urlpatterns = [
     path("alefbaisbots", AlefBaisBotsView.as_view(), name='alefbaisbots'),
     path("chanukahbots", ChanukahBotsView.as_view(), name='chanukahbots'),
     path("nekudosbots", NekudosBotsView.as_view(), name='nekudosbots'),
+    path("mitzvahbottown", MitzvahBotTownView.as_view(), name='mitzvahbottown'),
     path("privacypolicy", PrivacyPolicyView.as_view(), name='privacy_policy'),
     # path("contact", ContactView.as_view(), name='contact'),
     path("email-confirmation", SendEmailSuccessView.as_view(), name='success'),
-    path("fantasyfootballers", FantasyFootballersView.as_view(),
-         name='fantasyfootballers'),
 ]

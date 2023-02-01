@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+<title>MitzvahBotTown</title>
+{% endblock %}
+{% block content%}
+        <div class="greenRow" style="padding-bottom: 30px;">
+            <div class="row">
+                <div class="col">
+                    <h1 class='customFont' style='font-size: 6em;'>Mitzvah Bot Town</h1>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class='smallCustomFont' style='font-size: 2em;'>
+                        Explore MitzvahBotTown! Children will reinforce colors, numbers, shapes, letters, and nekudos!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Main Page.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <h3 class='smallCustomFont' style='font-size: 2em;'> Ice Cream Store</h3>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Build Ice Cream Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Toppings Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <h3 class='smallCustomFont' style='font-size: 2em;'>Bakery</h3>
+                    
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Cupcake Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Bread Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <h3 class='smallCustomFont' style='font-size: 2em;'>Candy Store</h3>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Matching Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Candy Rain Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <h3 class='smallCustomFont' style='font-size: 2em;'>Toy Store</h3>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Toy Order Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row">
+                <img src="{% static 'img/MitzvahBotTown/Toy Shopping Game.png' %}"  class='img-fluid' style='width: 70%; height: 70%; border: 8px solid #D9E6F4; text-align: center; margin-left: 15%;'/>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                <h3 class='smallCustomFont' style='font-size: 2.5em;text-align: center;'>Download today!</h3>
+            </div>
+            <div class="row">
+                    <div class="col-4" align="center">
+                        <a href="https://play.google.com/store/apps/details?id=com.CraftyCodersApps.NekudosBots">
+                            <img src="{% static 'img/androidDownload.png' %}" alt="Download from Google Play" style="width: 50%; "/>
+                        </a>
+                    </div>
+                    <div class="col-4" align="center">
+                        <a href="https://apps.apple.com/us/app/nekudos-bots/id1613250340">
+                            <img src="{% static 'img/appleDownload.png' %}" alt="Download from Apple App Store" style="width: 50%; "/>
+                        </a>
+                    </div>
+                    <div class="col-4" align="center">
+                        <a href="https://www.amazon.com/dp/B09X4HPT46/ref=apps_sf_sta">
+                            <img src="{% static 'img/amazonDownload.png' %}" alt="Download from Amazon App Store" style="width: 50%; "/>
+                        </a>
+                    </div>
+            </div>
+        </div>
+{% endblock content %}

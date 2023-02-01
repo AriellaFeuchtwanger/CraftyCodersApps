@@ -37,6 +37,10 @@ class NekudosBotsView(TemplateView):
     template_name = "nekudosbots.html"
 
 
+class MitzvahBotTownView(TemplateView):
+    template_name = "mitzvahbottown.html"
+
+
 class FantasyFootballersView(TemplateView):
     template_name = "fantasyfootballers.html"
 
