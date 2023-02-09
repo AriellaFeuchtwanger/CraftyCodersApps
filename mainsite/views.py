@@ -49,6 +49,10 @@ class PrivacyPolicyView(TemplateView):
     template_name = "privacypolicy.html"
 
 
+class SupportView(TemplateView):
+    template_name = "support.html"
+
+
 class ContactView(FormView):
     template_name = 'contact.html'
     form_class = ContactForm
