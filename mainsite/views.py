@@ -41,6 +41,10 @@ class MitzvahBotTownView(TemplateView):
     template_name = "mitzvahbottown.html"
 
 
+class PesachRunnerView(TemplateView):
+    template_name = "pesachrunner.html"
+
+
 class FantasyFootballersView(TemplateView):
     template_name = "fantasyfootballers.html"
 
