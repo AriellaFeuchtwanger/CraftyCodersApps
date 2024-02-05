@@ -48,6 +48,8 @@ class PesachRunnerView(TemplateView):
 class FantasyFootballersView(TemplateView):
     template_name = "fantasyfootballers.html"
 
+class ColorShapeBotsGameView(TemplateView):
+    template_name = "colorshapebotsplay.html"
 
 class PrivacyPolicyView(TemplateView):
     template_name = "privacypolicy.html"
