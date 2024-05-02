@@ -17,8 +17,8 @@
     <link rel="shortcut icon" href="{% static 'colorshapebots/TemplateData/favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'colorshapebots/TemplateData/style.css' %}">
     <script>
-        var buildUrl = "../static/colorshapebots/Build";
-        var loaderUrl = buildUrl + "/Take501.loader.js";
+        var buildUrl = "{% static 'colorshapebots/Build' %}";
+        var loaderUrl = "{% static 'colorshapebots/Build/Take501.loader.js' %}";
           // etc..
       
       </script>
@@ -69,7 +69,7 @@
           updateBannerVisibility();
         }
   
-        var buildUrl = "../static/colorshapebots/Build";
+        var buildUrl = "{% static 'colorshapebots/Build' %}";
         var loaderUrl = "{% static 'colorshapebots/Build/Take501.loader.js' %}";
         var config = {
           dataUrl: "{% static 'colorshapebots/Build/Take501.data' %}",
